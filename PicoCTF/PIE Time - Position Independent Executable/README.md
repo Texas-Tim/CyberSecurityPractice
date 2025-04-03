@@ -21,17 +21,16 @@ At this point, I can't suggest one tool over another, but what I used was the ap
 
 ![Binary Ninja Memory Inspection](binaryEvaluation.png)
 
-From this, we can see that the memory addresses are 
+From this, we can see that the addresses we need are: 
 - win: 0x0000012a7
 - main: 0x00000133d
 
 I can find the difference in a hex calculator online to see that I need to move ```96``` memory spaces
 
-Now, to log in to the webshell. 
-
-I get the following:
+Now, to log in to the webshell. I get the following:
 
 Address of main: 0x61edff0ad33d
+
 Enter the address to jump to, ex => 0x12345:
 
 Going back to my handy online hex calculator, I can subtract 96 from the hex value to get: ```0x61EDFF0AD2A7```
