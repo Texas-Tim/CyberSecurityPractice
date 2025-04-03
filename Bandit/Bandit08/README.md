@@ -7,8 +7,8 @@ The password for the next level is stored in the file data.txt next to the word 
 > man, grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd
 
 ### Step by Step Walkthrough:
-
+This went back to being simple with the grep command, which filters responses based on your input. I used the command: "cat data.txt | grep millionth"
 
 
 * UserName: bandit8
-* pwd: 
+* pwd: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc

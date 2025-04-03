@@ -10,8 +10,9 @@ NOTE: if you have solved this level and see ‘Byebye!’ when trying to log int
 
 
 ### Step by Step Walkthrough:
-
+This one is very simple, introducing you to the "diff" command. Just compare the two files, and grab the changed value.
+Final command: ```diff passwords.old passwords.new```
 
 
 * UserName: bandit18
-* pwd: 
+* pwd: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO

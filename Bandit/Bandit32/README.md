@@ -9,8 +9,14 @@ Clone the repository and find the password for the next level.
 > git 
 
 ### Step by Step Walkthrough:
+This level has some tricky parts. According to the level description, you're intended to push the file to the repository. 
 
+Typically, the command is ```git add .``` to add all the files you created. You can check the status of added files using ```git status```. Using this command, you can see that your file hasn't been added, huh, odd. Let's force it to be added with ```git add . -f``` which will ignore any "ignore" commands. 
+
+Using ```git status``` again we can see that worked! Use ```git commit -m "push"``` to commit your changes and ```git push``` to add it to the repository. 
+
+Although you'll get an error message, you'll also see a remote message telling you the password. Well done!
 
 
 * UserName: bandit32
-* pwd: 
+* pwd: 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K

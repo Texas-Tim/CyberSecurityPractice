@@ -10,8 +10,8 @@ The password for the next level is stored in a file called spaces in this filena
 - Google Search for “spaces in filename”
 
 ### Step by Step Walkthrough:
-
+simply auto-completing the file name will solve this challenge. Use this to infer how the computer reads spaces
 
 
 * UserName: bandit3
-* pwd: 
+* pwd: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx

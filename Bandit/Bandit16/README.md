@@ -13,8 +13,11 @@ Helpful note: Getting “DONE”, “RENEGOTIATING” or “KEYUPDATE”? Read t
 - OpenSSL Cookbook - Testing with OpenSSL
 
 ### Step by Step Walkthrough:
+Similar challenge to 15, but with a twist. instead of just connecting via a port, you need to connect with a secure ssl connection (ssl is outdated, but it's still an encrypted connection). "nc" isn't enough, now we need to use "ncat"
 
+Final command: ```ncat localhost 30001 --ssl```
 
+Alternative command: ```openssl s_client -connect localhost:30001```
 
 * UserName: bandit16
-* pwd: 
+* pwd: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx

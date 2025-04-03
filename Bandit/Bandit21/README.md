@@ -9,8 +9,12 @@ NOTE: Try connecting to your own network daemon to see if it works as you think
 > ssh, nc, cat, bash, screen, tmux, Unix ‘job control’ (bg, fg, jobs, &, CTRL-Z, …)
 
 ### Step by Step Walkthrough:
+This one took some effort, and a lot of googling. I was unaware how simple it was to set up your own server to send messages. Once I understood the assignment, it just took some studying of netcat ```nc``` to set up a server to send messages automatically. 
 
+Using a while statement, use nc in listening mode ```-l``` and set a port number ```-p``` to send a message to any connection on that port
+
+Final command: ```while true; do echo "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -l -p 50000; done```
 
 
 * UserName: bandit21
-* pwd: 
+* pwd: EeoULMCra2q0dSkYj561DX7s1CpBuOBt

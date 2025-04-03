@@ -9,8 +9,10 @@ Clone the repository and find the password for the next level.
 > git 
 
 ### Step by Step Walkthrough:
+This is exploring the use of ssh to GitHub. You simply need to clone the repository provided you, ensuring you're adding the port connection. Create a temporary directory and clone the repository. Using ```cat``` on the README will net you the next password
 
+Final Command: ```git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo```
 
 
 * UserName: bandit28
-* pwd: 
+* pwd: Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN

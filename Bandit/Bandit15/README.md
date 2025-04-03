@@ -15,8 +15,11 @@ The password for the next level can be retrieved by submitting the password of t
 - Port (computer networking) on Wikipedia
 
 ### Step by Step Walkthrough:
+This one gave me pause, as I was able to successfully utilize netcat, "nc", command to reach port 30000. But, since this was my first time, there was no feedback and I didn't realize I was connected. You're just met with an empty space as if the connection is pending. Simply submitting the password nets you the next pword.
+Final command: 
 
+```nc localhost 30000```
 
 
 * UserName: bandit15
-* pwd: 
+* pwd: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
