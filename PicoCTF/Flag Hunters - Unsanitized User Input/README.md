@@ -30,6 +30,6 @@ Input: ```something;RETURN 0``` will net us the result we want and allow us to g
 
 <details><summary>Flag</summary>
     <pre>
-    picoCTF{}
+    picoCTF{70637h3r_f0r3v3r_ac197d12}
     </pre>
    </details>
