@@ -18,4 +18,8 @@ The Heap Dump is just that. A dump of what is currently on the heap, more on tha
 
 Perusing the file won't get you anywhere quickly, but just in case, let's search using either the CLI ```grep``` or ```ctr-f```. It turns out that the flag is hiding in the middle of the heap! (I just searched for "picoCTF{")
 
-* Flag: picoCTF{Pat!3nt_15_Th3_K3y_ad7ea5ae}
+<details><summary>Flag</summary>
+    <pre>
+    picoCTF{Pat!3nt_15_Th3_K3y_ad7ea5ae}
+    </pre>
+   </details>

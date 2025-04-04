@@ -18,7 +18,7 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 
 hashcat is not exactly intuitive, but it's not too hard to understand either. Running without options, (flags instantiated before presenting the files) runs it in observation mode. It will output what algorithms it thinks you should use based on the hash type. In order to "crack" a hash, it requires you to input a hash mode with ```-m```. Providing the algorithm in the command, outputs a result. If it successfully cracked it, it will output in the format
 
-<hash>:<password>
+hash:password
 
 #### Example
 hashcat -m 1400 secretPasswordHash.txt ../PaswordLists/rockyou.txt
@@ -32,33 +32,41 @@ There are hundreds of algorithms on the web for hashing, I'll share a couple of 
 ### SHA256
 
 ```sha256sum``` - [SHA256 checksum (256-bit)](https://linux.die.net/man/1/sha256sum)
+
 creates a hash of a file, or files in a directory: 
-sha256sum <file>
-sha256sum <directory>/
+
+sha256sum -file-
+
+sha256sum -directory/-
 
 #### Example
-sha256sum secretPasswordHash.txt
+```sha256sum secretPasswordHash.txt```
 
 ### SHA1
 
 ```sha1sum``` - [SHA1 checksum ](https://linux.die.net/man/1/sha1sum)
+
 creates a hash of a file, or files in a directory: 
-sha1sum <file>
-sha1sum <directory>/
+
+sha1sum -file-
+
+sha1sum -directory/-
 
 #### Example
-sha1sum secretPasswordHash.txt
+```sha1sum secretPasswordHash.txt```
 
 
 ### md5
 
 ```md5sum``` - [MD5 checksum (128-bit)](https://linux.die.net/man/1/md5sum)
+
 creates a hash of a file, or files in a directory: 
-md5sum <file>
-md5sum <directory>/
+
+md5sum -file-
+md5sum -directory/-
 
 #### Example
-md5sum secretPasswordHash.txt
+```md5sum secretPasswordHash.txt```
 
 
 

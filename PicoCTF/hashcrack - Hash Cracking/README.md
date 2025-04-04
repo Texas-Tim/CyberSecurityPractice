@@ -24,4 +24,8 @@ You can either input into a hash cracker, lots of free tools online are availabl
 - hash type: ```SHA-256```
 - password: ```qwerty098```
 
-* Flag: ```picoCTF{UseStr0nG_h@shEs_&PaSswDs!_dcd6135e}```
+<details><summary>Flag</summary>
+    <pre>
+    picoCTF{UseStr0nG_h@shEs_&PaSswDs!_dcd6135e}
+    </pre>
+   </details>
