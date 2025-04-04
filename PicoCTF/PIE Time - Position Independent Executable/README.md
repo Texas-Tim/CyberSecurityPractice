@@ -37,4 +37,4 @@ Going back to my handy online hex calculator, I can subtract 96 from the hex val
 
 Inputting this into the webshell brings me to the expected address in memory and prints the flag!
 
-- Flag: picoCTF{b4s1c_p051t10n_1nd3p3nd3nc3_31cc212b}
+- Flag: ```picoCTF{b4s1c_p051t10n_1nd3p3nd3nc3_31cc212b}```
