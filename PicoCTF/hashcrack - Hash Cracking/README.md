@@ -15,13 +15,13 @@ You can either input into a hash cracker, lots of free tools online are availabl
 - hash1: ```482c811da5d5b4bc6d497ffa98491e38```
 - hash type: ```MD5```
 - password: ```password123```
-\n
-- hash2: ```b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3```
-- hash type: ```SHA-1```
-- password: ```letmein```
-\n
+
+* hash2: ```b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3```
+* hash type: ```SHA-1```
+* password: ```letmein```
+
 - hash3: ```916e8c4f79b25028c9e467f1eb8eee6d6bbdff965f9928310ad30a8d88697745```
 - hash type: ```SHA-256```
 - password: ```qwerty098```
-\n
+
 * Flag: ```picoCTF{UseStr0nG_h@shEs_&PaSswDs!_dcd6135e}```
