@@ -19,7 +19,7 @@ A little more inspection reveals that the code uses a number system with ```lip`
 
 Ah! A snag, inputting RETURN 0 doesn't work. What's going on? Well, the code has a line that lets it know it has a crowd section and appends the string "Crowd: " to the song. Thus, inputting "RETURN 0" results in "Crowd: Return 0" which is not what we want! We need an alternative.
 
-This is where I got stuck, and I had to look up the answer. It turns out that all the code block needs to work as we want is a split execution, which can be done with the semicolon ```;```.
+This is where I got stuck, and I had to look up the answer. It turns out that all the code block needs to work as we want is a split execution, which can be done with the semicolon ```;```. Adding a semicolon simply allows you to run multiple commands per line. 
 
 Input: ```something;RETURN 0``` will net us the result we want and allow us to grab the flag!
 
