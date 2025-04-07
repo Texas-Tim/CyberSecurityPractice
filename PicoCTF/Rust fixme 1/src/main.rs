@@ -15,14 +15,14 @@ fn main() {
     // Create decrpytion object
     let res = XORCryptor::new(&key);
     if res.is_err() {
-        ret; // How do we return in rust?
+        return; // How do we return in rust?
     }
     let xrc = res.unwrap();
 
     // Decrypt flag and print it out
     let decrypted_buffer = xrc.decrypt_vec(encrypted_buffer);
     println!(
-        ":?", // How do we print out a variable in the println function? 
+        "Decrypted flag: {}", // How do we print out a variable in the println function? 
         String::from_utf8_lossy(&decrypted_buffer)
     );
 }
