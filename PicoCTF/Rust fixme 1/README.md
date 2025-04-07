@@ -41,7 +41,9 @@ Which is simply telling us that the variable "decrypted_buffer" isn't being refe
 "Decrypted flag: {}",
 ```
 
-The comma is very important! As the two lines are wrapped by the println function. 
+The comma is very important! As the two lines are wrapped by the println function.
+
+If you'd like to refer to the solution, you can review the code in the "Fixed" main
 
 #### Getting the Flag
 Run the command ```cargo run``` again and we're done!
