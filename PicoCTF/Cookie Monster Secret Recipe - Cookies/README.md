@@ -7,7 +7,7 @@
 ### Description: 
 Cookie Monster has hidden his top-secret cookie recipe somewhere on his website. As an aspiring cookie detective, your mission is to uncover this delectable secret. Can you outsmart Cookie Monster and find the hidden recipe?
 
-- web link: ```http://verbal-sleep.picoctf.net:64848/```
+- Web link: ```http://verbal-sleep.picoctf.net:64848/```
 
 We'll start with a quick refresher. Cookies are an essential part of any website. These small bits of data are stored on a users device while browsing and are referenced by the website to "remember" information about the user. This user information can include things such as
 * Login credentials
@@ -34,10 +34,14 @@ Commonly used for tracking and advertising purposes.
 ### Step-by-Step Walkthrough:
 This challenge is very straight forward, intending to teach you more that cookies exist than anything else.
 
-### Cookie location
+#### Cookie location
 First, let's check where cookies are stored. To do that, we need to pull up the developer tools on the website, this can be done by either clicking `F12`, or by right clicking and clicking "inspect"
 
-On the developer tools, The cookies we're looking for are stored in either the "Network > {page} > Response Header" or "Application > Storage > Cookies" tab. But at the moment, nothing is there!
+On the developer tools, The cookies we're looking for are stored in either the 
+- Network > {page} > Response Header 
+or 
+- Application > Storage > Cookies 
+tab, but at the moment, nothing is there!
 
 In order for a cookie to be stored, we have to interact with the webpage. This can be done simply by attempting to login! Once we do, we'll see the expected secret recipe in one of the previously mentioned locations, but it's encrypted!
 
