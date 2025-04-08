@@ -5,9 +5,11 @@
 **Challenge Author:** Shuailin Pan (LeConjuror)
 
 ### Description: 
+
 RED, RED, RED, RED
 
 ### Step-by-Step Walkthrough:
+
 I'm excited for this challenge. The art of hiding data in an image is something I've played around with and want to learn more about.
 
 To start, lets use the tool "exiftool" to extract the metadata of the image
