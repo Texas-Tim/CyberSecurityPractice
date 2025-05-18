@@ -35,7 +35,7 @@ For this challenge, our first step is to connect to the provided instance. We im
 4. Print Flag:          (Try to print the flag, good luck)
 5. Exit
 
-if we take a look at the downloadable `chall.c` file and look at the main function and take a closer look at our Print Flag case. Within, it prints the 
+if we take a look at the downloadable `chall.c` file and look at the main function and take a closer look at our Print Flag case. Within, it prints the `check_win()` function.
 
 ```
 void check_win() {
@@ -57,11 +57,26 @@ void check_win() {
     }
 }
 ```
+The first line has us using a string compare function: `strcmp()`, which compares two strings character by character. If the strings are equal, the function returns 0.
 
+Our task is clear, overflow the heap using the only memory manipulation we have at our disposal. The task thankfully allows us to write to the buffer. Note that:
+
+Overflowing the heap refers to writing more data into a dynamically allocated memory region (on the heap) than it was allocated to hold. This can overwrite adjacent memory, corrupting data or control structures, and potentially leading to unintended behavior or security vulnerabilities.
+
+Using `Write to buffer`, we are allowed to affect the heap. Heap, unlike the Stack, allows us to dynamically allocate memory and it is not Last in First out or LIFO. The memory can be edited freely, assuming you have permissions. Thus, we must overflow the buffer address `0x57b7c305b2b0` in order to affect the addresses around it, specifically the address of our safe_var: `0x57b7c305b2d0`. 
+
+Our next step must be to understand the distance between these two memory addresses. Memory addresses are represnted in Hex, so finding the difference is as simple as finding the difference in Hex values. You can learn Hex math which uses base 16, or you can use an online calculator such as: `https://www.calculator.net/hex-calculator.html`. The function we must perform is: `0x57b7c305b2d0 - 0x57b7c305b2b0 = 0x20`. `0x20` is 32 bytes.
+
+
+
+#### Solution
+Now we know the distance, our next goal should be to attempt to overflow the memory by 32 bytes. By putting in 32 bytes worth of characters, we can affect the memory address of the `safe_var`: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
+
+To check that our solution worked, we can use option 1 to print the heap. We can see that the safe_var has been modified and confidently print the flag!
 
 
 <details><summary>Flag</summary>
     <pre>
-    picoCTF{}
+    picoCTF{my_first_heap_overflow_c3935a08}
     </pre>
    </details>
