@@ -17,6 +17,7 @@ The heap and stack are two distinct regions of memory used by a program during e
 
 Key Differences
 | *Feature*	|          *Heap*	        |           *Stack*          |
+|    ---    |           ---             |             ---            |
 |Allocation	|Manual (e.g., malloc)	    |Automatic (by the compiler) |
 |Lifetime	|Until explicitly freed	    |Until function exits        |
 |Speed	    |Slower	                    |Faster                      |
