@@ -14,4 +14,9 @@ a "-" named file refers to stdin/stdout or in other words, the computer is expec
 
 
 * UserName: bandit2
-* pwd: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+    </pre>
+   </details>

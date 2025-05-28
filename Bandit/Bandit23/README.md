@@ -19,4 +19,9 @@ Final Command: Note that the command uses your current username, which is bandit
 2. ```cat /tmp/$mytarget```
 
 * UserName: bandit23
-* pwd: 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+    </pre>
+   </details>

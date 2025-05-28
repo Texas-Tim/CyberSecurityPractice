@@ -17,4 +17,9 @@ Final command: ```while true; do echo "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -l
 
 
 * UserName: bandit21
-* pwd: EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+    </pre>
+   </details>

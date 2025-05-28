@@ -34,4 +34,9 @@ It hurts a little that I don't have a pwd for Level17...(hint, look in the /etc/
 
 
 * UserName: bandit17
-* pwd: EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
+    </pre>
+   </details>

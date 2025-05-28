@@ -9,4 +9,8 @@ This is an intro to server side security. The answer is literally on the page, b
 #### Final Answer: 
 Right click on the page and click "inspect" (or use f12) this will open up the webpage developer tools. Move to sources and click on ```index``` to see the file for the current webpage. The password is listed there
 
-* pwd: 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
+<details><summary>pwd</summary>
+    <pre>
+    0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
+    </pre>
+   </details>

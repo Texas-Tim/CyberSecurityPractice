@@ -11,4 +11,9 @@ This deals with hidden files. Hidden files in Linux are files or directories tha
 
 
 * UserName: bandit4
-* pwd: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+    </pre>
+   </details>

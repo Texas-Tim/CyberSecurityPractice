@@ -15,4 +15,9 @@ Final command: ```diff passwords.old passwords.new```
 
 
 * UserName: bandit18
-* pwd: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+    </pre>
+   </details>

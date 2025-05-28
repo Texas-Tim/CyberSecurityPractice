@@ -19,4 +19,9 @@ The alternative commands both work to create a bash shell or pseudo terminal res
 
 
 * UserName: bandit19
-* pwd: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+    </pre>
+   </details>

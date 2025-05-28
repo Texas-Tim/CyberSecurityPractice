@@ -20,4 +20,9 @@ Final command:
 ```ssh bandit.labs.overthewire.org -p 2220 -l bandit14 -i sshkey.private```
 
 * UserName: bandit14
-* pwd: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+    </pre>
+   </details>

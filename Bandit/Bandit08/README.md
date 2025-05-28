@@ -11,4 +11,9 @@ This went back to being simple with the grep command, which filters responses ba
 
 
 * UserName: bandit8
-* pwd: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+    </pre>
+   </details>

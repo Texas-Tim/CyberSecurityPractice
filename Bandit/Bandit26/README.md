@@ -37,4 +37,9 @@ Run ```:shell``` once more, and you're in! This is the "fairly easy" method to c
 
 
 * UserName: bandit26
-* pwd: s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
+    </pre>
+   </details>

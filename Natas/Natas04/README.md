@@ -10,4 +10,9 @@ Again, nothing on this page, but let's not take that for granted. Dev tools does
 For this challenge, the intended solution is to realize there is a "robots.txt" file which is something that most websites have, although there is no hint this is the direction you're intended to go. Simply open up 
 http://natas3.natas.labs.overthewire.org/robots.txt to find the password
 
-* pwd: QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+
+<details><summary>pwd</summary>
+    <pre>
+    QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+    </pre>
+   </details>

@@ -9,4 +9,9 @@ I'd be interested to know what the intended solution is to this level. Since I a
 #### Final Answer: 
 Right click on the page and click "inspect" (or use f12) this will open up the webpage developer tools. Move to sources and click on ```index``` to see the file for the current webpage. The password is listed there
 
-* pwd: TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
+
+<details><summary>pwd</summary>
+    <pre>
+    TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
+    </pre>
+   </details>

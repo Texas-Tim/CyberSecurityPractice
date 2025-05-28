@@ -20,4 +20,9 @@ At first, I thought it changed the userID of my profile, but it runs instead as 
 
 
 * UserName: bandit20
-* pwd: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+    </pre>
+   </details>

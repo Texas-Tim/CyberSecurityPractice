@@ -11,4 +11,8 @@ What you need to realize, is that you can traverse webpages the same way you mig
 #### Final Answer: 
 There is a file in there we couldn't see earlier called ```users.txt```! This is a file hosted on the server that the server has access to, but a good webpage does not let visitors see. Clicking in, you can find the password
 
-* pwd: 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+<details><summary>pwd</summary>
+    <pre>
+    3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+    </pre>
+   </details>

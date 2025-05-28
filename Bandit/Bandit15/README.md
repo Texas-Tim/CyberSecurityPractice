@@ -22,4 +22,9 @@ Final command:
 
 
 * UserName: bandit15
-* pwd: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+    </pre>
+   </details>

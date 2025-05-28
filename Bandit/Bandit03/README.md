@@ -14,4 +14,9 @@ simply auto-completing the file name will solve this challenge. Use this to infe
 
 
 * UserName: bandit3
-* pwd: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+    </pre>
+   </details>

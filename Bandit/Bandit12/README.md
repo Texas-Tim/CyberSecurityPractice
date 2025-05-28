@@ -22,4 +22,9 @@ This can be done with the "tr" command and I used Google to quickly come up with
 
 
 * UserName: bandit12
-* pwd: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+    </pre>
+   </details>

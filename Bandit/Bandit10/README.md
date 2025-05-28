@@ -13,4 +13,9 @@ This was tricky, requiring you to parse through unreadable data for random bits 
 
 
 * UserName: bandit10
-* pwd: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+    </pre>
+   </details>

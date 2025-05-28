@@ -13,4 +13,9 @@ This is one where I leaned heavily on a walkthrough, and I think it's important 
 
 
 * UserName: bandit25
-* pwd: iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+    </pre>
+   </details>

@@ -16,4 +16,9 @@ You're intended to check the tags in the repository. Tags are a way to mark spec
 
 
 * UserName: bandit31
-* pwd: fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+    </pre>
+   </details>

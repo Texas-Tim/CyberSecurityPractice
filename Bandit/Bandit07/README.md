@@ -18,4 +18,9 @@ I had to peruse the "find" manual a bit more to learn about filtering by users a
 
 
 * UserName: bandit7
-* pwd: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+    </pre>
+   </details>

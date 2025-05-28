@@ -59,4 +59,9 @@ The permissions I added initially were not quite right, as the pword still never
 
 
 * UserName: bandit24
-* pwd: gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+    </pre>
+   </details>

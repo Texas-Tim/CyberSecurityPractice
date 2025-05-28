@@ -20,7 +20,11 @@ There's not much here, and it's not entirely clear what you're supposed to do ne
 
 
 * UserName: bandit33
-* pwd: tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+<details><summary>Flag</summary>
+    <pre>
+    pwd: tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+    </pre>
+   </details>
 
 
 And that's it! Congratulations! We've beaten all 33 levels! So sad...On to the next adventure!

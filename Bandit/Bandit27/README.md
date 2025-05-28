@@ -12,4 +12,9 @@ Final Command: ```./bandit27-do cat /etc/bandit_pass/bandit27```
 
 
 * UserName: bandit27
-* pwd: upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+    </pre>
+   </details>

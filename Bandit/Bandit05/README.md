@@ -13,4 +13,9 @@ Using the "file" command shows that the true file uses ASCII text while the rest
 
 
 * UserName: bandit5
-* pwd: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+    </pre>
+   </details>

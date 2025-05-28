@@ -16,4 +16,9 @@ The text in this file is encoded with a base64 format. I encourage learning abou
 
 
 * UserName: bandit11
-* pwd: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+    </pre>
+   </details>

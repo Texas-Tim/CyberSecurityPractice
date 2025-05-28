@@ -19,4 +19,9 @@ Although you'll get an error message, you'll also see a remote message telling y
 
 
 * UserName: bandit32
-* pwd: 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
+    </pre>
+   </details>

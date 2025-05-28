@@ -22,4 +22,9 @@ Since dev stands for development, lets check that one first. Changing to this on
 
 
 * UserName: bandit30
-* pwd: qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
+    </pre>
+   </details>

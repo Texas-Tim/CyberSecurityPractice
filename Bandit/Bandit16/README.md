@@ -20,4 +20,9 @@ Final command: ```ncat localhost 30001 --ssl```
 Alternative command: ```openssl s_client -connect localhost:30001```
 
 * UserName: bandit16
-* pwd: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+    </pre>
+   </details>

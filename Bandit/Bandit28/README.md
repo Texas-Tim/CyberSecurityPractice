@@ -15,4 +15,9 @@ Final Command: ```git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/
 
 
 * UserName: bandit28
-* pwd: Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
+    </pre>
+   </details>

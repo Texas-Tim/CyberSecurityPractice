@@ -24,4 +24,9 @@ After a bit of perusing, it looks like we need the help of the command "find". U
 - ```-size 1033c``` (find a file 1033 bytes in size with c indicating bytes) 
 
 * UserName: bandit6
-* pwd: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+    </pre>
+   </details>

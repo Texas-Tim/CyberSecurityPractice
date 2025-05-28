@@ -35,4 +35,9 @@ The above steps require a little nuance, so you probably won't be able to just p
 
 
 * UserName: bandit13
-* pwd: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+    </pre>
+   </details>

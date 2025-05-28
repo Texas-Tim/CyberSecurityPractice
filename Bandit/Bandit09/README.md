@@ -16,4 +16,9 @@ This required a bit of googling on the sort and uniq commands. "sort" is pretty 
 
 
 * UserName: bandit9
-* pwd: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+    </pre>
+   </details>

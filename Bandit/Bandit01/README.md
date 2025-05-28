@@ -18,4 +18,9 @@ Passwords also occasionally change. It is recommended to take notes on how to so
 Simply use the command ```cat readme``` to read the file. Use ```ls``` to list all directories and files to check spelling
 
 * UserName: bandit1
-* pwd: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+<details><summary>Flag</summary>
+    <pre>
+    pwd: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+    </pre>
+   </details>

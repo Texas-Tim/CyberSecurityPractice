@@ -19,4 +19,9 @@ Final Command:
 
 
 * UserName: bandit29
-* pwd: 4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
+ 
+<details><summary>Flag</summary>
+    <pre>
+    pwd: 4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
+    </pre>
+   </details>
