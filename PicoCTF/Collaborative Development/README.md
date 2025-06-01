@@ -13,7 +13,7 @@ Another Git challenge by Jeffery! We already know how to navigate github with `c
 #### Step 1
 The `flag.py` file has a script which simply prints out a message and is not that useful for us.
 
-Reviewing the logs, we see lots of commits this time. I perused a few of the branches and quickly realized the intention for this challenge was not to use `git checkout`, although it would certainly work, instead we are supposed to navigate three `branches`. In fact, running `git branch -a` will show you all the branches we need to search. The commit messages give us a hint for which ID's we are looking for. I will leave that as an exercise for the reader.
+Reviewing the logs, we see lots of commits this time. I perused a few of the branches and quickly realized the intention for this challenge was not to use `git checkout`, although it would certainly work, instead we are supposed to navigate three `branches`. In fact, running `git branch -a` will show you all the branches we need to search. The commit messages in the logs provides us a hint for which ID's we are looking for. I will leave that as an exercise for the reader.
 
 #### Step 2
 I used `git diff` to quickly compare the values within the `flag.py` across different branches. This can be done with the following script: `git diff <id 1>:flag.py <id 2>:flag.py`
