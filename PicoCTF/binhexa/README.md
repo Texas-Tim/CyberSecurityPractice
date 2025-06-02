@@ -10,7 +10,7 @@ How well can you perfom basic binary operations?
 ### Step-by-Step Walkthrough:
 
 #### Binary Operations
-This task tests your knowledge of six binary operations. See this (website)[https://www.geeksforgeeks.org/binary-operation/#types-of-binary-operations] for hints if you need them
+This task tests your knowledge of six binary operations. See this [website](https://www.geeksforgeeks.org/binary-operation/#types-of-binary-operations) for hints if you need them
 
 ```
 - AND (&): Each bit is compared; result is 1 if both bits are 1.
