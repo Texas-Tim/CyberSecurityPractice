@@ -1,4 +1,4 @@
-**Challenge:** fixme2.py
+**Challenge:** fixme1.py
 
 **Level:** Easy
 
@@ -14,17 +14,16 @@ finding a syntax error can be the most frustrating part of debugging, especially
 1. IDE/Code Editor - These tools will have integrations for various common languages and often for some of the uncommon ones as well. They include line by line guidance on the what and where. If you're not using one of these, you'll want to learn how to before you go too much farther in coding. I prefer Visual Studio or VS Code when debugging
 2. Run the script - Just running it will throw the error and tell you exactly what line has the earliest living error. Sometimes, you might even get a suggestion for how to fix them.
 
-Run the code to see: `SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='? on line 22`
+Run the code to see: `IndentationError: unexpected indent on line 20`
 
 #### Action - Edit the code
-This error has the common mistake of using `=` instead of `==`. A single `=` is an assignment, assigning the value on the right to the variable `flag`. In previous versions of Python, I think this used to default as `True` (or maybe it was C++?) but I suppose this is no longer a valid syntax. Instead, it throws an error, which is better for everyone anyways.
+This error has the common mistake of incorrect use of spacing. Each language treats spacing slightly differently, and in Python, a space is indicative of a function or a wrapper of some kind. It means that whatever has the same spacing, belongs to whatever layer is above it. Once you remove the spacing, you break that layer.
 
-To fix this error, the answer is to assign it to `flag == ""`, which is a equality comparison; comparing `flag` to what's on the right and executing if they are exactly the same. If not, it moves on to the `else` execution automatically.
+In this specific case, the print function is acting as if there is a layer above it, but there is no indication of a working function or method. Instead, remove the spacing to allow the script to run without throwing an error
 
-As you can imagine, this code is extremely generous. It allows you to simply print the flag if you'd prefer, but the fix is not tedious so you might as well play along. Fix the code and grab your prize.
 
 <details><summary>Flag</summary>
     <pre>
-    picoCTF{3qu4l1ty_n0t_4551gnm3nt_e8814d03}
+    picoCTF{1nd3nt1ty_cr1515_182342f7}
     </pre>
    </details>
