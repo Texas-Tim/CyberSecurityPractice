@@ -19,7 +19,12 @@ The password checker will likely provide a hint here, looking at the code, we ca
 
 `chr(0x64) + chr(0x65) + chr(0x37) + chr(0x36)`
 
-These characters are the standard format for hexadecimal, you can look up a map to convert them, use an online tool, or copy the code directly into a python shell. I use [ipython](https://ipython.readthedocs.io/en/stable/install/index.html)
+the chr() is a character output function common to unicode
+
+#### What is unicode?
+Unicode is a universal character encoding standard that assigns a unique number (a code point) to every character in every language, including alphabets, symbols, and ideographs. It ensures that computers can correctly display and manipulate text from various languages, enabling global communication and data exchange. 
+
+The internal characters are the standard format for hexadecimal, you can look up a map to convert them, use an online tool, or copy the code directly into a python shell. I use [ipython](https://ipython.readthedocs.io/en/stable/install/index.html)
 
 Once you obtain the password, just run the `.py` file again and grab your well deserved flag!
 
