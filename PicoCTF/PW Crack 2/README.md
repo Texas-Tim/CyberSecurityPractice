@@ -19,7 +19,7 @@ The password checker will likely provide a hint here, looking at the code, we ca
 
 `chr(0x64) + chr(0x65) + chr(0x37) + chr(0x36)`
 
-These characters are the standard format for hexadecimal, you can look up a map to convert them, use an online tool, or copy the code directly into a python shell. I use (ipython)[https://ipython.readthedocs.io/en/stable/install/index.html]
+These characters are the standard format for hexadecimal, you can look up a map to convert them, use an online tool, or copy the code directly into a python shell. I use [ipython](https://ipython.readthedocs.io/en/stable/install/index.html)
 
 Once you obtain the password, just run the `.py` file again and grab your well deserved flag!
 
