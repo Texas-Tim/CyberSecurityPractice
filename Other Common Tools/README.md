@@ -52,3 +52,15 @@ Decode example:
 Output: `hello`
 
 Whenever using base64 decoding with multiple layers, one hint is that the resulting decoded string will be "shorter" then the original. If it's not, it may not be base64 or you may have forgot the `-d` flag
+
+### Least Significant Bit (LSB)
+Steganography is cloaking a hidden message inside an image or cover message. One way to achieve this is to use the Least Significant Bit (LSB) approach, which entails swapping out the least significant bits of the cover picture with those from the hidden message. 
+
+For example, if we have a 480×480 colour image with the dataset, and we want to hide a secret message of 100 bits within the image using LSB steganography. The LSB approach replaces the least significant bit of each pixel in the image with a bit from the secret message. This results in a slight change in the pixel values that is not easily noticeable to the human eye, but the difference is sufficient to hide the message.
+
+The following are tools for solving lsb challenges
+
+- [aperisolve](https://www.aperisolve.com/) - This page runs a variety of steganography techniques in easy to read format
+- Steghide - only works for jpg, bmp, wav, and AU
+- zsteg - only png and bmp
+- binwalk - unsure
