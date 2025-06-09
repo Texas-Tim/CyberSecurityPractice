@@ -1,1 +1,0 @@
-Collection of all Easy challenges from [picoCTF](https://play.picoctf.org/practice?difficulty=1&page=1)
