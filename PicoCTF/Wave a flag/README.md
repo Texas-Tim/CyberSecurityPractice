@@ -44,24 +44,32 @@ The string `-rw-r--r--` represents the file permissions in Linux. Here’s what 
 Breakdown:
 
 File type (first character):
+```
 '-' : Regular file
 'd' : Directory
 'l' : Symbolic link
+```
 
 Owner permissions (next 3 characters):
+```
 'r' : Read
 'w' : Write
 '-' : No execute
+```
 
 Group permissions (next 3 characters):
+```
 'r' : Read
 '-' : No write
 '-' : No execute
+```
 
 Other (world) permissions (last 3 characters):
+```
 'r' : Read
 '-' : No write
 '-' : No execute
+```
 
 Summary:
 * The owner can read and write.
