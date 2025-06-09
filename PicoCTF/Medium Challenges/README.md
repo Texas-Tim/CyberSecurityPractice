@@ -1,0 +1,1 @@
+Collection of all Medium challenges from [picoCTF](https://play.picoctf.org/practice?difficulty=2&page=1)
