@@ -71,7 +71,7 @@ Now that we've extracted and separated the correct partition, let's run our `str
 
 `strings partition.img | grep 'picoCTF{[^}]*}'`
 
-And voila! We've successfully separated the correct flag
+And voila! We've successfully identified the correct flag
 
 <details><summary>Flag</summary>
     <pre>
