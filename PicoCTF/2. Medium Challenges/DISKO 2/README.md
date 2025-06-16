@@ -1,6 +1,6 @@
 **Challenge:** DISKO 2
 
-**Level:** Easy
+**Level:** Medium
 
 **Challenge Author:** Darkraicg492
 
