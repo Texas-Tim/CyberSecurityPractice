@@ -22,8 +22,8 @@ At this point, I can't suggest one tool over another, but what I used was the ap
 ![Binary Ninja Memory Inspection](binaryEvaluation.png)
 
 From this, we can see that the addresses we need are: 
-- win: 0x0000012a7
-- main: 0x00000133d
+- win: `0x0000012a7`
+- main: `0x00000133d`
 
 I can find the difference in a hex calculator online to see that I need to move ```96``` memory spaces
 
