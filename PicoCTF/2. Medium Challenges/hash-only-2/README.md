@@ -24,6 +24,13 @@ ahHa! We received our hash, and it even indicates that it's encrypted with `MD5`
 #### Investigation - binary exploit?
 Similar to `hash-only-1`, we can try to get some information dumps. However, the only one that we really need to do is confirm that our script has the same vulnerability. But, we don't know where it's located. As we learned about `PATH` in the last challenge, we need to learn a little more about `bin` for this challenge 
 
+##### Note: hint
+<details><summary>Flag</summary>
+    <pre>
+    I spend a lot of time in this walkthrough going down false paths before understanding what the issue really is. If you want to skip a lot of these ramblings and testing, go to `Investigation - rbash to bash` near the end.
+    </pre>
+   </details>
+
 #### Learning - bin
 bin is short for binary and commonly refers to a directory (like /bin or /usr/bin) on Unix/Linux systems that contains executable binary files (programs and commands). These directories store essential system programs and utilities that users and the system can run.
 
@@ -46,12 +53,7 @@ Oops, running any sort of redirect seems to hit an error.
 
 So it looks like they added additional security after all! Let's see if we can crack it and force the file md5sum to be created.
 
-##### Note: hint
-<details><summary>Flag</summary>
-    <pre>
-    I spend a lot of time in this walkthrough going down false paths before understanding what the issue really is. If you want to skip a lot of these ramblings and testing, go to `Investigation - rbash to bash` near the end.
-    </pre>
-   </details>
+
 
 
 #### Investigation - creating the malicious file
