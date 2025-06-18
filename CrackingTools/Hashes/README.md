@@ -18,10 +18,10 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 
 hashcat is not exactly intuitive, but it's not too hard to understand either. Running without options, (flags instantiated before presenting the files) runs it in observation mode. It will output what algorithms it thinks you should use based on the hash type. In order to "crack" a hash, it requires you to input a hash mode with ```-m```. Providing the algorithm in the command, outputs a result. If it successfully cracked it, it will output in the format
 
-hash:password
+`<hash>:<password>`
 
 #### Example
-hashcat -m 1400 secretPasswordHash.txt ../PaswordLists/rockyou.txt
+hashcat -m 1400 -a 0 secretPasswordHash.txt ../PasswordLists/rockyou1.txt --show
 
 Outputs: **916e8c4f79b25028c9e467f1eb8eee6d6bbdff965f9928310ad30a8d88697745:qwerty098**
 
