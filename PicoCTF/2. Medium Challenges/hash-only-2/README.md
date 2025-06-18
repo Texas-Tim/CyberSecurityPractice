@@ -24,8 +24,8 @@ ahHa! We received our hash, and it even indicates that it's encrypted with `MD5`
 #### Investigation - binary exploit?
 Similar to `hash-only-1`, we can try to get some information dumps. However, the only one that we really need to do is confirm that our script has the same vulnerability. But, we don't know where it's located. As we learned about `PATH` in the last challenge, we need to learn a little more about `bin` for this challenge 
 
-##### Note: hint
-<details><summary>Flag</summary>
+##### Note: False Paths
+<details><summary>HINT</summary>
     <pre>
     I spend a lot of time in this walkthrough going down false paths before understanding what the issue really is. If you want to skip a lot of these ramblings and testing, go to `Investigation - rbash to bash` near the end.
     </pre>
