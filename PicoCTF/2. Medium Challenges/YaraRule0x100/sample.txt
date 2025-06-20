@@ -1,0 +1,15 @@
+rule SuspiciousExe
+{
+    meta:
+        description = "Detects suspicious.exe"
+        author = "analyst"
+        date = "2025-06-20"
+
+    strings:
+        $s1 = "UPX0"
+        $s2 = "UPX1" 
+        $s3 = ".rsrc" 
+
+    condition:
+        all of them
+}
