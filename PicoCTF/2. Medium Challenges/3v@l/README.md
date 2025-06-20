@@ -81,18 +81,18 @@ print(x.__class__)  # Output: <class 'int'>
 
 Furthermore, `().__class__` in Python returns the class of an empty tuple object, which is `<class 'tuple'>`. We could use any object here, but we'll use a tuple to access its base classes and their subclasses.
 
-#### Investigation - subclasses
+#### Investigation - Subclasses
 
 Our first goal will be to get a list of all subclasses. Index into this list to find classes which can import `os` via `__init__.__globals__`, then use commands such as `cat` and `ls` in string form.
 
-Since `os` is blacklisted, but `bracket notation` is not,our goal is to use the following:
+Since `os` is blacklisted, but `bracket notation` is not, our goal is to use the following:
 
 `().__class__.__bases__[0].__subclasses__()[<index>].__init__.__globals__`
 
-where `<index>` is the index of our class
+where `<index>` is the index of our class that has the method `__globals__`
 
 * `__class__`: a special attribute in Python that refers to the class (type) of an object. It allows you to access the object's type and its class-level attributes and methods.
-* `__bases__`: All new-style classes in Python (which is everything in Python 3) have a `__bases__` attribute that lists their base classes.
+* `__bases__`: All new-style classes in Python (which is everything in Python 3) have an attribute that lists their base classes.
 * `__subclasses__`: A special method in Python that, when called on a class, returns a list of all classes that directly inherit from it.
 * `__init__`: A special method in Python classes, known as the constructor. It is automatically called when a new instance of the class is created, and is used to initialize the object’s attributes.
 * `__globals__`:  A special attribute of Python function objects. It is a dictionary containing the global variables that were accessible in the module where the function was defined.
