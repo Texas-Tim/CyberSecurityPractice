@@ -10,7 +10,7 @@ How about some hide and seek?
 ### Step-by-Step Walkthrough:
 We are provided with an image and a title telling us to seek the hidden flag. Our first step with images should always be to use `exiftool`
 
-#### Step 1
+## Investigation - exiftool
 `run exiftool ukn_reality.jpg`
 
 ```
@@ -41,7 +41,7 @@ Image Size                      : 4308x2875
 Megapixels                      : 12.4
 ```
 
-#### Step 2
+## Investigation - base64 translation
 Within the `Attribution URL` we see a string that is quite suspicious with those trailing `==`. That's a common pattern for `base64`, so we can either use an online tool, or run a decoder in the CLI.
 
 run: `echo cGljb0NURntNRTc0RDQ3QV9ISUREM05fYjMyMDQwYjh9Cg== | base64 --decode`

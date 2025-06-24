@@ -10,7 +10,14 @@ Do you know how to use the web inspector?
 Additional details will be available after launching your challenge instance.
 
 ### Step-by-Step Walkthrough:
-Our first step as always, is to take a hint from the title and immediately open to the "inspect" portion of the webpage. This can be done by either pressing `F12`, or right clicking in choosing `inspect`. Once in the inspect screen, I prefer to start my investigations in the `Sources` tab which shows all the page documents, files and images associated with that page. 
+
+## Investigation - web page
+All good web page vulnerability inspections will generally comprise of two things:
+
+1. Using the Web Page Inspector
+2. Testing all the interactive elements
+
+Let's open up an inspector panel and look at the source element. This can be done by either pressing `F12`, or right clicking in choosing `inspect`. Once in the inspect screen, I prefer to start my investigations in the `Sources` tab which shows all the page documents, files and images associated with that page. 
 
 The next step is to see what information we are working with. The web page has some snarky comments, some images and some page links.
 

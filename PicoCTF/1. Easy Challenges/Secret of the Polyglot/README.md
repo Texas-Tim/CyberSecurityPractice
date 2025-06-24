@@ -11,6 +11,8 @@ The Network Operations Center (NOC) of your local institution picked up a suspic
 ### Step-by-Step Walkthrough:
 Polyglot means: `knowing or using several languages`, that hint along with the phrase `they're getting conflicting information on what type of file it is` immediately stands out to me. Let's download the file and inspect it. The file is titled: `flag2of2-final.pdf` which tells us two things:
 
+## Investigation - file types
+
 1. opening the file provides us with what looks like part of a flag: `1n_pn9_&_pdf_1f991f77}`
 2. there is likely only one other flag file to complete the challenge
 

@@ -10,6 +10,7 @@ Have you heard of Rust? Fix the syntax errors in this Rust file to print the fla
 ### Step-by-Step Walkthrough:
 Now that we're basically old hats with Rust, this challenge should be no problem! Let's run the code and see what errors we get
 
+## Investigation - Rust
 1. error[E0133]: call to unsafe function is unsafe and requires unsafe function or block --> src/main.rs:31:31
 
 ```

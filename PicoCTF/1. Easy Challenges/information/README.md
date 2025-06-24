@@ -10,10 +10,10 @@ Files can always be changed in a secret way. Can you find the flag?
 ### Step-by-Step Walkthrough:
 The first step to analyzing an image, should be the tool `exiftool`
 
-#### Learning - exiftool
+## Learning - exiftool
 exiftool is a command-line application used to read, write, and edit metadata in image, audio, and video files. It supports a wide variety of file formats and can extract information such as camera settings, timestamps, GPS data, and more from files.
 
-#### Investigation - exiftool
+## Investigation - exiftool
 run the command: `exiftool cat.jpg`
 
 ```
@@ -50,7 +50,7 @@ Megapixels                      : 4.1
 
 Does anything stand out among this list of information?
 
-#### Investigation - base64
+## Investigation - base64
 That License looks like a string that may be encoded. I'm no expert of what should be in the license section, but it certainly feels suspicious to me.
 
 A very common encoding pattern is `base64`. We can run the following command to decode the string and see if we are right:

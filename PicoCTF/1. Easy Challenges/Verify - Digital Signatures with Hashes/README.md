@@ -11,6 +11,7 @@ People keep trying to trick my players with imitation flags. I want to make sure
 ### Step-by-Step Walkthrough
 Start the instance, and input the password. It asks you to ssh so you can use either your machine or the provided webshell
 
+## Investigation - hashing
 Checksum: `3ad37ed6c5ab81d31e4c94ae611e0adf2e9e3e6bee55804ebc7f386283e366a4`
 
 To decrypt the file once you've verified the hash, run `./decrypt.sh files/<file>.`
@@ -23,7 +24,7 @@ Now that we're logged in, there are three available resources.
 
 Before we continue, let's explain a little about what we are doing.
 
-#### What are hashes?
+## Learning - what are hashes?
 Hashes are ways to validate the integrity of data. A "hash" is simply a term for a mathematical function that is intended to be
 
 1. Unbreakable - There are some algorithms that have been cracked, we don't use these anymore
@@ -41,7 +42,7 @@ Some common hashing algorithms the industry uses is
 
 For this exercise, the description tells us we are using the SHA-256 version. The command to use this hash version is `sha256sum`
 
-#### CheckSum
+## Investigation - CheckSum
 Now that we've covered Hashing, lets set our goal. In order to verify which folder has the right hash, we have to compare our "checksum" hash with the hash values in the files in the folder "files". I ran the following to quickly compare each file with the checksum
 
 ```

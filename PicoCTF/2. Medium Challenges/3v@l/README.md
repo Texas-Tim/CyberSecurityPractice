@@ -17,7 +17,7 @@ Upon opening the webpage, you are greeted by a website with a `Bank-Loan Calcula
 4. Bypassed Blacklists with Dynamic String Construction
 5. Executed Commands
 
-#### Investigation
+## Investigation - web page
 All good web page vulnerability inspections will generally comprise of two things:
 
 1. Using the Web Page Inspector
@@ -67,10 +67,10 @@ After solving it, I watched some walkthroughs and I definitely made it a lot mor
     </pre>
    </details>
 
-#### Investigation - Testing Injections
+## Investigation - Testing Injections
 Reviewing this [site](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection) we can run through some test injections and we quickly see this is not the way to go. 
 
-#### Learning - Python Classes
+## Learning - Python Classes
 __class__ is a special attribute in Python that refers to the class of an object. It allows you to access the type (class) of any instance.
 
 Example:
@@ -81,7 +81,7 @@ print(x.__class__)  # Output: <class 'int'>
 
 Furthermore, `().__class__` in Python returns the class of an empty tuple object, which is `<class 'tuple'>`. We could use any object here, but we'll use a tuple to access its base classes and their subclasses.
 
-#### Investigation - Subclasses
+## Investigation - Subclasses
 
 Our first goal will be to get a list of all subclasses. Index into this list to find classes which can import `os` via `__init__.__globals__`, then use commands such as `cat` and `ls` in string form.
 
@@ -111,7 +111,7 @@ But we want the index as well, so let's add that in:
 
 `[(i, c.__name__) for i, c in enumerate((()).__class__.__bases__[0].__subclasses__())]`
 
-#### Investigation - Globals
+## Investigation - Globals
 There! Now that we know we can iterate, let's find a class that includes `__globals__`
 
 `[i for i, c in enumerate((()).__class__.__bases__[0].__subclasses__()) if hasattr(c.__init__, '__globals__')]`
@@ -125,7 +125,7 @@ and we get a big long list of valid indexes! For simplicity, we'll just use inde
 ##### Note
 not all indexes are equal here, some will be simpler to implement than others. 80 turned out to be fairly straightforward
 
-#### Investigation - Import
+## Investigation - Import
 Inputting `80` into our index:
 
 `().__class__.__bases__[0].__subclasses__()[80].__init__.__globals__`
@@ -146,7 +146,7 @@ Thus we can see that the flag is located one directory above! Now let's use `cat
 
 Ah, of course, the '/' is also blacklisted. This is where we'd want to use `chr`.
 
-#### Learning - chr
+## Learning - chr
 `chr` is a built-in Python function that returns the character corresponding to a given Unicode (ASCII) integer value.
 
 Example:

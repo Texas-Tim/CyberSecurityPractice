@@ -13,11 +13,11 @@ Cyber security often has a huge amount of data to look through - from logs, vuln
 ### Step-by-Step Walkthrough
 To be honest, I'm not sure why this challenge lets you download the files. I suppose it can help you walk through the logic of what's going on. To play and grab the flag, you'll have to use the provided instance. Let's explore Binary Search!
 
-#### What is Binary Search
+## Learning - What is Binary Search
 Binary Search is a searching pattern that relies on boolean values of True and False to determine the position of an object in an array. It relies on the array to store values in some sort of order, for example, lets say you had an array of 1-1000 as we do in this challenge. Binary search techniques expect you to start at 500 and the result would tell you which half of the array your value is in. This effectively eliminates half of the array in one go. 
 
 
-#### Binary Search Effective Speed
+## Investigation - Binary Search Effective Speed
 Binary Search's effective speed is denoted as `O(log n)`. This means that as the dataset size increases, binary search effective speed grows in `log n` time, which is much better than linear time. Linear implies you're checking each and every item one at a time until you find the obect.
 
 The `Big O` notation is a common measuring notation measuring the effectiveness of algorithms and is what we use to compare one algorithm to another. Read more on `Big O` notation [here](https://en.wikipedia.org/wiki/Big_O_notation)

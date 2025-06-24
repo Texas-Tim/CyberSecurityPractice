@@ -11,7 +11,7 @@ I made a cool website where you can announce whatever you want! I read about inp
 ### Step-by-Step Walkthrough:
  Upon opening the webpage, you are greeted by a website with various nodes and interactive elements and the title `NAND Simulator`
 
-#### Investigation
+## Investigation
 All good web page vulnerability inspections will generally comprise of two things:
 
 1. Using the Web Page Inspector
@@ -19,7 +19,7 @@ All good web page vulnerability inspections will generally comprise of two thing
 
 Our first hint comes from the title of the challenge. SSTI stands for Server Side Template Injection, and we've been here before in `SSTI1`. So we can expect a vulnerability in the submission form somehow.
 
-#### Investigation - Testing Injections
+## Investigation - Testing Injections
 Reviewing this [site](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection) we can run through some test injections
 
 The attacker tests the identified input field by injecting template syntax specific to the template engine in use. Different web frameworks use different template engines (e.g., Jinja2 for Python, Twig for PHP, or FreeMarker for Java).
@@ -43,7 +43,7 @@ I can deduce a few things.
 3. Some of the characters seem to be completely blacklisted
 
 
-#### Learning - escape sequences
+## Learning - escape sequences
 We're going to replace elements one at a time from the previous command with alternative characters. Here's the original command:
 
 `{{self.__init__.__globals__.__builtins__.__import__('os').popen('cat flag').read()}}`
@@ -52,7 +52,7 @@ first, let's replace all `_` with unicode. Unicode has an `escape sequence`
 
 An `escape sequence` is a combination of characters used to represent special characters in a string that cannot be typed directly or would otherwise have a different meaning. Escape sequences usually start with a backslash (`\`) followed by one or more characters. The `escape sequence` for `_` is `\x5f`
 
-#### Action - Replacing the code
+## Action - Replacing the code
 
 Our command now looks like this:
 
@@ -83,7 +83,7 @@ This last command will net you the flag, and just for learning sake, you can als
 {{ request|attr('self')|attr('\x5f\x5finit\x5f\x5f')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('cat flag')|attr('read')() }}
 ```
 
-#### Learning - blacklisting characters doesn't work
+## Learning - blacklisting characters doesn't work
 It's hard to stay on top of things is the lesson here. Just because you fix one hole, doesn't mean you've fixed the ship. 
 
 

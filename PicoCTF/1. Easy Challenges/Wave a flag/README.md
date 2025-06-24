@@ -10,7 +10,7 @@ Can you invoke help flags for a tool or binary? This program has extraordinarily
 ### Step-by-Step Walkthrough:
 It's always funny how many ways there are to solve a challenge. I opened up the `warm` file in a text editor and used `ctr-f` to find the flag pretty quick. Let's run through what the challenge intends for you to do though
 
-#### Investigation - executing a program
+## Investigation - executing a program
 To execute a program in Linux, use the terminal and type:
 
 `./<program>`
@@ -29,7 +29,7 @@ Executing this on the program `warm`, we get:
 
 `-rw-r--r-- 1 <user> <user> 10936 <date> warm`
 
-#### Learning - file permissions breakdown
+## Learning - file permissions breakdown
 
 The string `-rw-r--r--` represents the file permissions in Linux. Here’s what each section means:
 ```
@@ -78,7 +78,7 @@ Summary:
 
 In other words, the file does not grant permissions for anyone to execute it. We need to change this to let the file be executable!
 
-#### Action - changing file permissions
+## Investigation - changing file permissions
 Changing file permissions requires using the linux command `chmod`
 
 chmod is a command-line utility in Unix/Linux used to change the permissions of files or directories. It stands for "change mode." With chmod, you can set who can read, write, or execute a file.

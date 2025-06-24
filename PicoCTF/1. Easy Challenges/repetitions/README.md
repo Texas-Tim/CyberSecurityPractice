@@ -10,6 +10,7 @@ Can you make sense of this file?
 ### Step-by-Step Walkthrough:
 As the title suggests, we'll be running through multiple decode operations.
 
+## Investigation - base64 encoding
 #### Step 1
 The `==` at the end of this one indicates base64 encoding. Let's run `echo <message> | base64 -d` to decode it. Remember to add quotations if you're on multiple lines
 

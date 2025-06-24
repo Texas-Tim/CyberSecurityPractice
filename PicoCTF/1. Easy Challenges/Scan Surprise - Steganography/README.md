@@ -11,7 +11,7 @@ I've gotten bored of handing out flags as text. Wouldn't it be cool if they were
 ### Step-by-Step Walkthrough
 The challenge provides us a QR code. The goal would be to scan this with some sort of tool. First though, a quick aside about QR codes
 
-#### QR Codes
+## Learning - QR Codes
 
 A QR code (Quick Response code) is a type of two-dimensional barcode that can store information in a grid of color (usually black) and white squares. It is designed to be scanned by a camera or a QR code reader, which decodes the information embedded in the code. QR codes are widely used for various purposes, such as:
 
@@ -23,7 +23,7 @@ A QR code (Quick Response code) is a type of two-dimensional barcode that can st
 
 QR codes can store more data than traditional barcodes and are highly versatile. They are commonly scanned using smartphone cameras or dedicated QR code scanners.
 
-#### Solution
+## Investigation - zbarimg
 
 The tool I used is called `zbarimg`. You can use your own system, or the webshell provided by Pico. Scan the image with
 

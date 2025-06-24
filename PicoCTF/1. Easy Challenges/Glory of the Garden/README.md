@@ -20,7 +20,7 @@ The results are what we would expect so we'll move on.
 
 Second, lets use the tool `exiftool` to extract the metadata of the image
 
-#### Investigation - Image metadata
+## Investigation - Image metadata
 
 ```exiftool garden.png```
 
@@ -95,12 +95,12 @@ Nothing really going on here, there does seem to be some binary data in the `red
 
 Next, we'll use a hex editor online with [hexed.it](hexed.it)
 
-#### Investigation - Hex Editor
+## Investigation - Hex Editor
 Upload the file, and although hex editing is beyond my skills right now, I'm going to just do a search of the page for the flag. 
 
 Voila! There it is, hidden in the hex of the image
 
-#### Learning - Hex Editor
+## Learning - Hex Editor
 Since a hex editor solved the challenge, lets learn a bit mroe about it.
 
 A hexadecimal editor (or hex editor) is a tool that allows you to view and edit the raw binary data of a file, displaying the contents in hexadecimal (base 16) format. For an image, a hex editor lets you see and modify the underlying bytes that make up the image file, including metadata, headers, and pixel data.

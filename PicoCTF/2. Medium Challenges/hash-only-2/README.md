@@ -10,7 +10,7 @@ Here is a binary that has enough privilege to read the content of the flag file 
 ### Step-by-Step Walkthrough:
 We are immediately asked to connect to an instance and run a binary. There is a v1 of this challenge, but I ran this first as it came up before v1. The biggest difference it seems is that in v1, you're allowed to `scp` the binary file, which may have some insight to the challenge
 
-#### Investigation - Finding the binary
+## Investigation - Finding the binary
 Logging in to the instance, I immediately made an assumption that the challenge was broken. Running `ls -a` showed nothing of value, so where is the promised binary? 
 
 Let's see what happens if we just type `flaghasher`
@@ -21,7 +21,7 @@ ahHa! We received our hash, and it even indicates that it's encrypted with `MD5`
 2. Flag location: `/root/flag.txt`
 3. Encryption variation: `MD5`
 
-#### Investigation - binary exploit?
+## Investigation - binary exploit?
 Similar to `hash-only-1`, we can try to get some information dumps. However, the only one that we really need to do is confirm that our script has the same vulnerability. But, we don't know where it's located. As we learned about `PATH` in the last challenge, we need to learn a little more about `bin` for this challenge 
 
 ##### Note: False Paths
@@ -31,10 +31,10 @@ Similar to `hash-only-1`, we can try to get some information dumps. However, the
     </pre>
    </details>
 
-#### Learning - bin
+## Learning - bin
 bin is short for binary and commonly refers to a directory (like /bin or /usr/bin) on Unix/Linux systems that contains executable binary files (programs and commands). These directories store essential system programs and utilities that users and the system can run.
 
-#### Investigation - finding flaghasher
+## Investigation - finding flaghasher
 We don't have permissions to use `cd`, but we do have permissions to use `ls` and `find`. We can use these to explore our server. Let's start by using `ls /bin`
 
 No luck! At this point, I didn't want to search every directory, so after a bit of trial and error I used `find /usr -name "flaghasher"`, which quickly identified the directory
@@ -53,10 +53,7 @@ Oops, running any sort of redirect seems to hit an error.
 
 So it looks like they added additional security after all! Let's see if we can crack it and force the file md5sum to be created.
 
-
-
-
-#### Investigation - creating the malicious file
+## Investigation - creating the malicious file
 
 creating the file is simple, however, within the file, we need to add in our script:
 
@@ -69,7 +66,7 @@ After a bit of googling options, most of my other options, such as `printf`, `ca
 
 However, it's worth noting that `echo` and the other commands did work, so they weren't directly blocked. I found a method to append text using `dd`. Let's remind ourselves what dd is for.
 
-#### Learning - dd
+## Learning - dd
 dd is a Unix/Linux command-line utility used to copy and convert raw data from one location to another. It can read and write data at the byte or block level, making it useful for tasks like creating disk images, cloning drives, backing up partitions, and writing ISO files to USB drives.
 
 Example usage:
@@ -82,7 +79,7 @@ Example usage:
 
 dd is a powerful tool for low-level data copying and manipulation.
 
-#### Investigation - Creating md5sum
+## Investigation - Creating md5sum
 It seems that `dd` commands can go through because of the level it's writing at. We can use this to write to our file. Use the following commands to create and append to our file:
 
 1. `touch md5sum`
@@ -104,10 +101,10 @@ Next, prepend the directory with your file to PATH. The current directory is `.`
 
 And we've run into the next hurdle, we receive a message: `-rbash: PATH: readonly variable`
 
-#### Investigation - working around readonly
+## Investigation - working around readonly
 I identified the physical location of PATH in `/etc/environment`, but it was write protected even for `dd`. This isn't working, as we're simply too locked down from a permissions perspective. We need a different `shell` to work out of.
 
-#### Learning - shells
+## Learning - shells
 A shell is a program that provides a command-line interface for users to interact with the operating system. It allows you to enter commands, run scripts, manage files, and control processes. Common shells include `bash`, `zsh`, and `sh`.
 
 * `sh (the Bourne Shell)`
@@ -123,7 +120,7 @@ To see what `shell` we are in, we can use the command: `echo $SHELL`
 
 We are using `rbash`! Before I had looked into shells, I didn't realize that this was the source of our issues. But looking back, I can see that `rbash` was clearly stated as the root cause. I would say that we wasted all that time, but we learned a lot, including more about `shells`!
 
-# Investigation - rbash to bash
+## Investigation - rbash to bash
 rbash (restricted Bash) is a restricted version of the Bash shell. It limits the user’s ability to perform certain actions, such as changing directories, modifying environment variables, redirecting output, or running programs using absolute or relative paths. rbash is often used to provide a more controlled or secure shell environment, especially in restricted user accounts or CTF challenges.
 
 This is the source of all of our issues! Let's see if they also protect from switching `shells`. Just type in `bash` or `sh` (`bash` is much better)

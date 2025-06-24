@@ -29,7 +29,7 @@ After a little bit of researching, I decided that YARA rules are not something I
 
 
 
-#### Learning - YARA rules
+## Learning - YARA rules
 YARA rules are a way to describe and identify patterns of malware, files, or data using a specialized rule-based language. YARA is widely used in cybersecurity and malware analysis to detect and classify files based on textual or binary patterns.
 
 A YARA rule typically consists of:
@@ -55,7 +55,7 @@ rule ExampleRule
 
 YARA rules help analysts and security tools scan files and memory for known patterns of malicious or suspicious content.
 
-#### Action - Creating our YARA rule
+## Action - Creating our YARA rule
 For simplicity, I'm going to be working out of a `sample.txt` file.
 
 Our rule will need to match the signatures from the `suspicious.exe` executable

@@ -10,7 +10,7 @@ Are overflows just a stack concern?
 
 ### Step-by-Step Walkthrough
 
-#### Heap vs Stack
+## Learning - Heap vs Stack
 `Heap` is a term that refers to memory allocation and is a region of a program's memory used for dynamic memory allocation. It is managed by the operating system or the runtime environment and allows programs to allocate and free memory at runtime using functions like malloc and free in C, or new and delete in C++.
 
 The heap and stack are two distinct regions of memory used by a program during execution. They serve different purposes and have unique characteristics:
@@ -25,7 +25,7 @@ Key Differences
 |Access	    |Global (via pointers)	    |Local to the function       |
 |Error	    |Memory leaks	            |Stack overflow              |
 
-#### Challenge
+## Investigation - Source Code
 For this challenge, our first step is to connect to the provided instance. We immediately notice 5 options:
 
 1. Print Heap:          (print the current state of the heap - affected by your input from 2)
@@ -58,7 +58,7 @@ void check_win() {
 ```
 The first line has us using a string compare function: `strcmp()`, which compares two strings character by character. If the strings are equal, the function returns 0.
 
-#### Heap Overflow
+## Investigation - Heap Overflow
 Our task is clear, overflow the heap using the only memory manipulation we have at our disposal. The task thankfully allows us to write to the buffer. Note that:
 
 Overflowing the heap refers to writing more data into a dynamically allocated memory region (on the heap) than it was allocated to hold. This can overwrite adjacent memory, corrupting data or control structures, and potentially leading to unintended behavior or security vulnerabilities.
@@ -67,7 +67,7 @@ Using `Write to buffer`, we are allowed to affect the heap. Heap, unlike the Sta
 
 Our next step must be to understand the distance between these two memory addresses. Memory addresses are represnted in Hex, so finding the difference is as simple as finding the difference in Hex values. You can learn Hex math which uses base 16, or you can use an online calculator such as: `https://www.calculator.net/hex-calculator.html`. The function we must perform is: `0x57b7c305b2d0 - 0x57b7c305b2b0 = 0x20`. `0x20` is 32 bytes.
 
-#### Solution
+## Investigation - 32 byte overload
 Now we know the distance, our next goal should be to attempt to overflow the memory by 32 bytes. By putting in 32 bytes worth of characters, we can affect the memory address of the `safe_var`: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
 
 To check that our solution worked, we can use option 1 to print the heap. We can see that the safe_var has been modified and confidently print the flag!

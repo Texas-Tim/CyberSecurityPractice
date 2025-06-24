@@ -14,7 +14,7 @@ Do you know how to move between directories and read files in the shell? Start t
 ### Step-by-Step Walkthrough:
 ssh into the instance and use `ls` to see what we're working with. We immediately see that there are 3 parts of the flag with the first part in the current directory. Instructions for the second are also there.
 
-#### Investigation - Part 2/3
+## Investigation - Part 2/3
 The instructions say:
 
 `Next, go to the root of all things, more succinctly `/``
@@ -25,7 +25,7 @@ use the `cd` command to move to the `root` directory with:
 
 This will bring you to the `root` directory with the 2nd part of the flag, and the instructions for the third
 
-#### Investigation - Part 3/3
+## Investigation - Part 3/3
 The instructions say: 
 
 `Lastly, ctf-player, go home... more succinctly '~'`

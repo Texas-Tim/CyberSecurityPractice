@@ -10,7 +10,7 @@ Python scripts are invoked kind of like programs in the Terminal... Can you run 
 ### Step-by-Step Walkthrough:
 Before we do anything, let's look at the files. 
 
-#### Investigation
+## Investigation - analyzing the files
 `flag.txt` looks encrypted
 
 `pw.txt` is random gibberish, but a password can be anything
@@ -33,7 +33,7 @@ Examples:
 
 Note: within the python script is a method `sys.argv[<index>]` which reads in user arguments. These are passed when the file is run as seen in the example above
 
-#### Action - running a python program
+## Investigation - running a python program
 Let's run the program exactly as the message described. Since we are decrypting the flag, we'll need to pass in `-d`:
 
 `python ende.py -d flag.txt.en dbd1bea4dbd1bea4dbd1bea4dbd1bea4`

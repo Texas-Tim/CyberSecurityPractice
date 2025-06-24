@@ -8,7 +8,10 @@
 Using a Secure Shell (SSH) is going to be pretty important.
 
 ### Step-by-Step Walkthrough:
-As the title and description implies, the challenge is to properly SSH into the host. Here's how to SSH into a host with a port identifier: `ssh -p 2222 user@host`
+As the title and description implies, the challenge is to properly SSH into the host. 
+
+## Investigation - SSH
+Here's how to SSH into a host with a port identifier: `ssh -p 2222 user@host`
 
 With the following inputs for my instance
 

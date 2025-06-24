@@ -10,7 +10,7 @@ Kishor Balan tipped us off that the following code may need inspection: [link](h
 ### Step-by-Step Walkthrough:
 We are immediately greeted by a website with `I made a website`. The title of the page (and the challenge) is directing us towards inspections
 
-#### Investigation - Inspection
+## Investigation - web page
 All good web page vulnerability inspections will generally comprise of two things:
 
 1. Using the Web Page Inspector
@@ -24,13 +24,13 @@ Let's check out the `What` and the `How` sections of the page.
 
 The `How` part of the page suggests that we check out other elements that make up the webpage, such as `css` and `js`. 
 
-#### Learning - CSS
+## Learning - CSS
 CSS (Cascading Style Sheets) is a language used to describe the appearance and formatting of a website written in HTML. CSS controls the layout, colors, fonts, spacing, and overall visual presentation of web pages, allowing you to separate content (HTML) from design (CSS).
 
-#### Learning - JS
+## Learning - JS
 JS stands for JavaScript, a programming language commonly used to create interactive and dynamic content on websites. JavaScript runs in the browser and can manipulate HTML, CSS, and handle user events, making web pages more responsive and functional.
 
-#### Investigation - Inspect all the pages
+## Investigation - Inspect all the pages
 Checking out the other pages in the `source tab` of the `inspection panel` nets us all three parts of the flag. Nice Work!
 
 

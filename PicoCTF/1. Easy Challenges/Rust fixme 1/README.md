@@ -8,7 +8,10 @@
 Have you heard of Rust? Fix the syntax errors in this Rust file to print the flag!
 
 ### Step-by-Step Walkthrough:
-Rust is not my first language, so this is a learning exercise for me. Obviously our first step is to download the source code and extract the `tar` file. Reviewing the `main.rs` file, let's start with the comments, which seem to be pretty generous in their guidance. (Running Rust is not as difficult as VS Code would have you believe. Just run ```cargo run``` in the root folder, the one with the .toml file! You may have to install cargo as a package manager)
+Rust is not my first language, so this is a learning exercise for me. Obviously our first step is to download the source code and extract the `tar` file. 
+
+## Investigation - Rust
+Reviewing the `main.rs` file, let's start with the comments, which seem to be pretty generous in their guidance. (Running Rust is not as difficult as VS Code would have you believe. Just run ```cargo run``` in the root folder, the one with the .toml file! You may have to install cargo as a package manager)
 
 1. Line 5:  How do we end statements in Rust?
 

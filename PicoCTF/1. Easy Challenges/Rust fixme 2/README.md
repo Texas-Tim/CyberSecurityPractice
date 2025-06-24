@@ -10,6 +10,7 @@ The Rust saga continues? I ask you, can I borrow that, pleeeeeaaaasseeeee?
 ### Step-by-Step Walkthrough:
 Once again, we approach Rust, a language with which I have 0 experience! Let's dive in.
 
+## Investigation - Rust
 1. error[E0596]: cannot borrow `*borrowed_string` as mutable, as it is behind a `&` reference
  --> src/main.rs:9:5
 

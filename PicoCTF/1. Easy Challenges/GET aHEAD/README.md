@@ -10,7 +10,7 @@ Find the flag being held on this server to get ahead of the competition http://m
 ### Step-by-Step Walkthrough:
 We are immediately greeted by a website with webpage that provides the option for 2 different colors, Red and Blue. 
 
-#### Investigation - Inspector
+## Investigation - Inspector
 All good web page vulnerability inspections will generally comprise of two things:
 
 1. Using the Web Page Inspector
@@ -20,12 +20,12 @@ lets start with opening up the web page inspector using `f12`
 
 The only thing that stands out is that the buttons are using a PHP method to either `GET` or `POST` to a backend server. Let's click the buttons to see what they do while keeping the inspection window open.
 
-#### Investigation - Methods
+## Investigation - Methods
 Okay, this one stumped me for awhile. I had to look at the hints provided. The title makes it clear that we are looking at different methods, it's also strange to have a `GET` method and a `POST` method that have similar results. Nevertheless, nothing seemed to even provide a hint.
 
 Looking at the hints, they suggest using `Burp` which is a tool to intercept messages coming to and from the website to its backend server. We can use it to edit the methods and see what we get as a response.
 
-#### Investigation - Burp
+## Investigation - Burp
 If you don't have `Burp Suite`, I'd strongly suggest downloading it. We'll need it for this challenge.
 
 Playing around, I noticed that the response is determined by what type of method we are submitting, not by whether we choose `Red` or `Blue`. Therfore, we should see what other methods we can submit.

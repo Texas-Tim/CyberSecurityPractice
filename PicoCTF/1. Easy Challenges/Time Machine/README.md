@@ -11,6 +11,7 @@ What was I last working on? I remember writing a note to help me remember...
 ### Step-by-Step Walkthrough:
 First things first, let's take a look at what we're provided with. `challenge.zip` includes a message which reads: `This is what I was working on, but I'd need to look at my commit history to know why...` as well as a `.git` folder. 
 
+## Investigation - git commit history
 For simplicity, I removed the period in the file name, because typically any file with a period at the beginning is hidden.
 
 `commit history` is a clue for us to view the commit history in the `.git` folder, which is located in two places. 

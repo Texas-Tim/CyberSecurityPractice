@@ -22,15 +22,15 @@ javascript:(function() {
 })();
 ```
 
-#### Bookmarklet
+## Bookmarklet
 A bookmarklet is a small JavaScript program stored as a bookmark in a web browser. When you click the bookmarklet, it runs the JavaScript code on the current web page, allowing you to quickly perform actions like modifying the page, extracting data, or automating tasks. Bookmarklets are often used for convenience or web development/debugging.
 
-#### Step 1
+## Step 1
 The intended way to solve this challenge is to create a bookmarklet, by creating a new bookmark and pasting the code into the URL.
 
 Clicking the bookmark will then reveal the flag
 
-#### Notes
+##### Notes
 This can be solved in any manner that runs the javascript. Analyzing this code does not reveal anything that is unique or specific to the website. 
 
 For example, if you `inspect` the page, then paste the code into the console tab, you'll also receive the flag.

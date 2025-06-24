@@ -11,12 +11,14 @@ Additional details will be available after launching your challenge instance.
 ### Step-by-Step Walkthrough:
 Feel free to check out the binary and code written in C. The first thing we need to realize is what PIE is referring to.
 
+## Learning - PIE
 PIE stands for "Position Independent Executable". This basically means that if PIE is enabled, the address space of the executable when run, does not affect the execution. IE. you can expect a different memory address every time it is executed. Are we going to be looking into memory? You bet!
 
 The second thing to realize though, is that despite the binary being loaded into a random address every time, the offsets between parts in the binary will remain the same. This is where looking at the code is useful. 
 
 The third thing to recognize, is that there is a function in the code that we are aiming for. There is a function called "win()" that will give us the flag. Therefore, we should identify how many address spaces there are between that function, and the main function.
 
+## Investigation - Binary Ninja
 At this point, I can't suggest one tool over another, but what I used was the application "Binary Ninja" to investigate. I'm not very familiar with this tool, but I was able to stumble around to see the memory addresses
 
 ![Binary Ninja Memory Inspection](binaryEvaluation.png)

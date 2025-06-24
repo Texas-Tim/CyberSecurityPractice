@@ -14,9 +14,10 @@ We're provided with an instance, and once we connect with `netcat`, a bunch of g
 
 the chr() is a character output function common to unicode
 
-#### What is unicode?
+## Learning - What is unicode?
 Unicode is a universal character encoding standard that assigns a unique number (a code point) to every character in every language, including alphabets, symbols, and ideographs. It ensures that computers can correctly display and manipulate text from various languages, enabling global communication and data exchange. 
 
+## Investigation - Unicode Converter
 The inside is also clearly hex. So use your favorite converter, or preferably just copy the entire thing into a python shell, I use [ipython](https://ipython.readthedocs.io/en/stable/install/index.html). Voila! You got your flag
 
 

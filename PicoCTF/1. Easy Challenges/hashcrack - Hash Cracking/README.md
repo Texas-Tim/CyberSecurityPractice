@@ -10,6 +10,7 @@ A company stored a secret message on a server which got breached due to the admi
 ### Step-by-Step Walkthrough:
 The challenge is pretty straightforward. It provides a webserver you can netcat into using the local webshell provided by PicoCTF. Once accessed, it provides a list of 3 hashes you have to crack, one at a time.
 
+## Investigation - hashcat
 You can either input into a hash cracker, lots of free tools online are available, or you can learn how to use a tool yourself. I used "hashcat" with the dictionary "rockyou.txt"
 
 - hash1: ```482c811da5d5b4bc6d497ffa98491e38```

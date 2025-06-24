@@ -14,10 +14,10 @@ Upon running the instance, we netcat into it and are greeted with the following:
 
 We need to perform an md5 hash of whatever string it asks you for. I was asked to hash the string: `Chinatown`
 
-#### What is hashing?
+## Learning - What is hashing?
 Hashing is the process of converting data (like a string or file) into a fixed-size string of characters, usually using a mathematical algorithm called a hash function. The output, called a hash or digest, is unique to the input data. Hashing is commonly used for data integrity checks, password storage, and digital signatures because it is fast and difficult to reverse (one-way). Hashes are not meant to be reversed at all, so they are not good for passwords, but intended primarily for data integrity as mentioned. Common hash functions include MD5, SHA-1, and SHA-256, and for this challenge we will be using MD5
 
-#### MD5Sum
+## Investigation - MD5Sum
 You can read a little more about how to perform hashing in my [Cracking Tools](https://github.com/Texas-Tim/CyberSecurityPractice/tree/main/CrackingTools/Hashes) but instead of creating a file, we're going to use the `echo` function in linux cli. Run the following to get your hash:
 
 `echo -n "<your string>" | md5sum`

@@ -10,13 +10,12 @@ Can you get the flag?
 ### Step-by-Step Walkthrough:
 The title says it all I assume. Upon starting the instance, you are greeted by a website about a wikipedia article
 
-#### Step 1 - Investigation
+#### Investigation - web page
 All good web page vulnerability inspections will generally comprise of two things:
 
 1. Using the Web Page Inspector
 2. Testing all the interactive elements
 
-#### Step 2 - Action
 lets start with opening up the web page inspector since we don't immediately see any interactive elements. For this challenge, that seems to be enough. Check out the `index` page of the `source` tab and grab the flag
 
 <details><summary>Flag</summary>

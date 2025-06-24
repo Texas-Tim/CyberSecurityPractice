@@ -9,7 +9,7 @@ How well can you perfom basic binary operations?
 
 ### Step-by-Step Walkthrough:
 
-#### Binary Operations
+## Binary Operations
 This task tests your knowledge of six binary operations. See this [website](https://www.geeksforgeeks.org/binary-operation/#types-of-binary-operations) for hints if you need them
 
 ```
@@ -33,7 +33,7 @@ Binary Number 1: 01110100
 Binary Number 2: 10100111
 ```
 
-#### Question 1/6
+## Question 1/6
 Operation 1: '<<'
 Perform a left shift of Binary Number 1 by 1 bits.
 
@@ -45,7 +45,7 @@ Perform a left shift of Binary Number 1 by 1 bits.
 Enter the binary result: 11101000
 
 
-#### Question 2/6
+## Question 2/6
 Operation 2: '|'
 Perform the operation on Binary Number 1&2.
 
@@ -55,7 +55,7 @@ Perform the operation on Binary Number 1&2.
     </pre>
    </details>
 
-#### Question 3/6
+## Question 3/6
 Operation 3: '>>'
 Perform a right shift of Binary Number 2 by 1 bits.
 
@@ -65,7 +65,7 @@ Perform a right shift of Binary Number 2 by 1 bits.
     </pre>
    </details>
 
-#### Question 4/6
+## Question 4/6
 Operation 4: '&'
 Perform the operation on Binary Number 1&2.
 
@@ -75,7 +75,7 @@ Perform the operation on Binary Number 1&2.
     </pre>
    </details>
 
-#### Question 5/6
+## Question 5/6
 Operation 5: '*'
 Perform the operation on Binary Number 1&2
 
@@ -85,7 +85,7 @@ Perform the operation on Binary Number 1&2
     </pre>
    </details>
 
-#### Question 6/6
+## Question 6/6
 Operation 6: '+'
 Perform the operation on Binary Number 1&2.
 
@@ -95,7 +95,7 @@ Perform the operation on Binary Number 1&2.
     </pre>
    </details>
 
-#### Transform to Hex
+## Transform to Hex
 Enter the results of the last operation in hexadecimal:
 
 <details><summary>result</summary>

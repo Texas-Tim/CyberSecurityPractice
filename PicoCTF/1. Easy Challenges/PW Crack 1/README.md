@@ -14,7 +14,7 @@ This time the password is encoded, so download the files and run the python file
 
 we are greeted with a password prompt
 
-#### Step 1 - Investigation
+## Investigation - Code
 The password checker will likely provide a hint here, looking at the code, we can see that the password is hard coded in the checker.
 
 Input the password into the prompt and grab your flag!

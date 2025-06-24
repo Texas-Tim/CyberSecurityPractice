@@ -9,9 +9,9 @@
 RED, RED, RED, RED
 
 ### Step-by-Step Walkthrough:
-
 I'm excited for this challenge. The art of hiding data in an image is something I've played around with and want to learn more about.
 
+## Investiagation - exiftool
 To start, lets use the tool "exiftool" to extract the metadata of the image
 
 ```exiftool red.png```
@@ -57,7 +57,7 @@ Bold in every stroke.
 
 The first letter of each section, separated by a ".", spells out: `CHECK LSB`. Now we're sure what we're looking for, let's find a tool or script that can help us
 
-#### Steganography - LSB
+## Learning - Steganography - LSB
 Steganography is cloaking a hidden message inside an image or cover message. One way to achieve this is to use the Least Significant Bit (LSB) approach, which entails swapping out the least significant bits of the cover picture with those from the hidden message. 
 
 For example, if we have a 480×480 colour image with the dataset, and we want to hide a secret message of 100 bits within the image using LSB steganography. The LSB approach replaces the least significant bit of each pixel in the image with a bit from the secret message. This results in a slight change in the pixel values that is not easily noticeable to the human eye, but the difference is sufficient to hide the message.
@@ -71,7 +71,7 @@ There are a suite of online tools that can assist us, I'll list some of them her
 
 I stopped here, as zsteg was able to give me the encoded message, but I was not impressed with the LSB tools that are available
 
-#### Encoded Message
+## Investigation - Encoded Message
 The message was a repeating `base64` encoding, as indicated by the `==` at the end
 
 ```

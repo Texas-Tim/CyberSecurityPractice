@@ -12,7 +12,7 @@ This challenge is simply teaching you that using the `tab complete` when moving 
 
 Finally, to make this challenge even easier, you don't have to navigate to each individual directory. If you just continue pressing tab, you can fill out the path automatically until there are no more directories.
 
-#### Investigation - File
+## Investigation - grep
 Once you get through all of the oddly named directories, you will be left with a file called
 
 `fang-of-haynekhtnamet`

@@ -9,10 +9,10 @@
 ### Step-by-Step Walkthrough:
 I am completely new to Burp. As this is a new tool, much of my explanations are likely to be...lacking in some way. 
 
-#### What is Burp?
+## Learning - Burp Suite
 Burp Suite is a popular cybersecurity tool used for web application security testing. It acts as an intercepting proxy, allowing you to inspect, modify, and replay requests and responses between your browser and a web server. Burp Suite is widely used by penetration testers and security researchers to find vulnerabilities such as SQL injection, XSS, authentication flaws, and more.
 
-#### Step 1
+## Investigation - Burp Suite
 First, let's explore Burp a little. The Live Task is not needed for this task, and I'm not really sure what it is, so lets move on to Target. The page should be empty, and prompting you to open the browser. Clicking it will open a browser called `Port Swigger`. Posting a URL in the search bar of the browser allows you to set the target host you're planning to investigate and acts like a regular browser otherwise. At this point, click on `Open Browser` and post `http://titan.picoctf.net:<PORT>/`.
 
 ![BurpSuiteTarget](images/Step1.png)
@@ -20,7 +20,7 @@ First, let's explore Burp a little. The Live Task is not needed for this task, a
 ##### Note
 If your browser is just hanging, check in Burp, is the Proxy tab highlighted? This happened to me and it means that the page has been intercepted and is waiting for your interaction before sending a response to the webserver
 
-#### Step 2
+## Investigation - page response
 At this point, just play around with the website a little and see the various responses. You will notice that the webpage has two pages. The main page, and `/dashboard`. You should see the following status codes:
 
 1. 200 - all is well
@@ -30,7 +30,7 @@ At this point, just play around with the website a little and see the various re
 
 Our goal seems to be to overcome the OTP, but we don't yet know how
 
-#### Step 3
+## Investigation - Intercept
 Now that we've explored the website, lets take a look at the Proxy tab. Proxy in Burp allows you to intercept the requests before they get sent to the web server. You can manipulate the data or just look at the request information. If you haven't already turned on `Intercept`, go ahead and do so now. You'll have to maneuver around the pages online again, but once you do, you'll start to see that the web page just never loads, but a URL will appear in the Proxy request list.
 
 ![Intercept](images/Intercept.png)
@@ -39,7 +39,7 @@ To continue to browse, you will eventually need to `Forward` the request in the 
 
 ![Forward](images/Forward.png)
 
-#### Step 4
+## Investigation - Repeater
 Now that you understand Proxy, right click on one of the requests and send it to the `Repeater` The Repeater allows you to quickly resubmit requests which allows you to quickly change the values of any of the forms that you've filled out. Such as the OTP, which is what is currently blocking you. I'd suggest playing around in the Request box and changing the value of the OTP.
 
 ![Repeater](images/Repeater.png)
@@ -49,7 +49,7 @@ It's worth noting that OTP are not supposed to accept text, but it does. It also
 
 ![Repeater Requests](images/RepeaterRequest.png)
 
-#### Step 5
+## Investigation - Removing the Password
 At this point, we know that the OTP is not being filtered and is accepting any value. The first thing we should try is not submitting the OTP at all, but removing it. And this also turns out to be the final trick! This can be done on the Proxy tab, or the repeater tab to obtain the flag. Well done!
 
 

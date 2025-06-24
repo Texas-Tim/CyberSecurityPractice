@@ -11,14 +11,14 @@ Can you find the flag in this disk image? The right one is Linux! One wrong step
 ### Step-by-Step Walkthrough:
 We are presented with another .dd file
 
-#### Investigation - Strings
+## Investigation - Strings
 My first step is to use the same method to grab the flag as the first one. Since we already know the format of the data we are looking for, we can try to use `grep` to obtain what we need. I used the following command
 
 `strings disko-2.dd | grep 'picoCTF{[^}]*}'`
 
 Clearly this is not going to be as simple, we are met with a large number of flags, with the correct one hidden somewhere. We "could" try and input each of them one by one, but that's no fun. Let's take another look at the information provided
 
-#### Investigation - Partitions
+## Investigation - Partitions
 In the description, it makes a comment: `the correct one is Linux!`. What does that mean? Well disk drives can be separated and isolated into partitions.
 
 A partition is a logically separated section of a storage device (like a hard drive or USB stick). Each partition acts as an independent unit, allowing you to install different operating systems, organize data, or separate system files from user files. Partitions are defined in the disk’s partition table and can be formatted with different filesystems (e.g., NTFS, ext4, FAT32).
@@ -46,7 +46,7 @@ Now, my first time in this challenge, I didn't receive the second part with the 
 
 We can see that the disk has 2 partitions, a `Linux` and a `W95 FAT32` partition, which stands for Windows 95 FAT32 filesystem. Based on the description, we want to pay particular attention to the `Linux` distribution, but how do we extract it?
 
-#### Investigation - Extraction
+## Investigation - Extraction
 Extraction is the process of retrieving or isolating specific data from a larger set or source. In digital forensics or computing, extraction often refers to pulling out files, partitions, or information from disk images, archives, or other containers for analysis or use. For example, extracting a partition from a disk image means creating a separate file containing only that partition’s data.
 
 The command to extract the partition is as follows:
@@ -66,7 +66,7 @@ Thus, based on our disk meta-data, we can run the following command to get our i
 
 `dd if=disko-2.dd of=partition.img bs=512 skip=2048 count=51200`
 
-#### Action - Strings
+## Action - Strings
 Now that we've extracted and separated the correct partition, let's run our `strings` command again on `partition.img`:
 
 `strings partition.img | grep 'picoCTF{[^}]*}'`

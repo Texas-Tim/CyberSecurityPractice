@@ -10,7 +10,7 @@ Can you find the robots?  [link](https://jupiter.challenges.picoctf.org/problem/
 ### Step-by-Step Walkthrough:
 We are immediately greeted by a website with `Where are the robots?`.
 
-#### Investigation
+## Investigation - web page
 All good web page vulnerability inspections will generally comprise of two things:
 
 1. Using the Web Page Inspector
@@ -18,7 +18,7 @@ All good web page vulnerability inspections will generally comprise of two thing
 
 lets start with opening up the web page inspector using `f12`
 
-#### Investigation - Robots
+## Investigation - robots.txt
 Unfortunately, nothing is in the source, and there are no interactive elements. Let's consider the hints of the challenge.
 
 We are being directed towards `robots`
@@ -33,7 +33,7 @@ Disallow: /private/
 
 This tells all web crawlers not to access the /private/ directory.
 
-#### Action - identifying hidden/disallowed pages
+## Investigation - identifying hidden/disallowed pages
 Let's take a look at this site's `robots.txt` at: `https://jupiter.challenges.picoctf.org/problem/36474/robots.txt`
 
 Bingo! We see that there is a hidden file

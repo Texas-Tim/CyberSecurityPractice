@@ -12,7 +12,7 @@ There are two flags in this challenge. Submit flag one here, and flag two in Pac
 ### Step-by-Step Walkthrough:
 Upon opening the webpage, you are greeted by a website with various nodes and interactive elements and the title `NAND Simulator`
 
-#### Investigation
+## Investigation
 All good web page vulnerability inspections will generally comprise of two things:
 
 1. Using the Web Page Inspector
@@ -20,7 +20,7 @@ All good web page vulnerability inspections will generally comprise of two thing
 
 Let's open up an inspector panel and look at the source element. Although I don't see anything that immediately jumps out, let's check out the `NAND Simulator`. 
 
-#### Learning - NAND
+## Learning - NAND
 NAND stands for "Not AND" and is a basic logic gate in digital electronics. It outputs false (0) only when all its inputs are true (1); otherwise, it outputs true (1). In other words, it is the opposite of the AND gate.
 
 Truth table:
@@ -38,7 +38,7 @@ Checking out the board, we have 8 nodes. Nodes `1-4` are "target nodes" while No
 
 We are given very little information about what the task is, so let's look at the source code that was provided a little more.
 
-#### Investigation - Source Code
+## Investigation - Source Code
 The `index.js` file has some promising results. In order for us to obtain the flag, we need to return a result of `0x1337`. Most other results will be `0x3333`, but how do I know what result I'm returning?
 
 Looking a little further up in the code, we have `result = memory[0x1000] | (memory[0x1001] << 8);`
@@ -53,7 +53,7 @@ I've run into a brick wall. Without understanding the end goal (something to do 
 
 Burp let's me better visualize what's occurring, with the submitted `json` file. Each node allows two connections incoming, with the gate not showing up unless there are at least two incoming connections. This is consistent with NAND, as the gate takes two connections and outputs based on the incoming values. The JSON value in the `POST` to `/check` includes the gate numbers as values, but I don't see a submission of the `0 or 1` I mentioned.
 
-#### Investigation - Confusion
+## Investigation - Confusion
 Honestly, I just played around with the UI and randomly got the flag. The UI doesn't seem consistent, as near as I can tell. The nodes seem to have random values of `0,1` assigned to them and the output doesn't seem to follow the `NAND` rules. Consider this an unsatisfying conclusion.
 
 A big note, I went online and found some tutorials. Someone introduced this tool to me

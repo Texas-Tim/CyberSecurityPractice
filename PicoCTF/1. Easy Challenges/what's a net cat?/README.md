@@ -10,7 +10,7 @@ Using `netcat (nc)` is going to be pretty important. Can you connect to `jupiter
 ### Step-by-Step Walkthrough:
 This challenge is pretty straight forward
 
-#### Learning - netcat (nc)
+## Learning - netcat (nc)
 `netcat` (often abbreviated as `nc`) is a command-line networking utility used to read from and write to network connections using TCP or UDP. It is often called the "Swiss Army knife" of networking because it can be used for tasks such as:
 
 * Connecting to remote servers (like a simple client)
@@ -24,7 +24,7 @@ Example usage:
 
 This connects to example.com on port 80.
 
-#### Action - connection
+## Investigation - connection
 Let's connect to our website with netcat:
 
 `nc jupiter.challenges.picoctf.org 41120`

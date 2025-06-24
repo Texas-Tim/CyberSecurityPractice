@@ -9,13 +9,16 @@ Cookie Monster has hidden his top-secret cookie recipe somewhere on his website.
 
 - Web link: ```http://verbal-sleep.picoctf.net:64848/```
 
+### Step-by-Step Walkthrough:
+This challenge is very straight forward, intending to teach you more that cookies exist than anything else.
+
+## Learning - Cookies
 We'll start with a quick refresher. Cookies are an essential part of any website. These small bits of data are stored on a users device while browsing and are referenced by the website to "remember" information about the user. This user information can include things such as
 * Login credentials
 * Preferences
 * Session Data
 * etc..
 
-#### Types of Cookies
 1. Session Cookies:
 
 Temporary cookies that are deleted when the browser is closed.
@@ -31,10 +34,7 @@ Used for remembering preferences or login details across sessions.
 Created by domains other than the one the user is visiting.
 Commonly used for tracking and advertising purposes.
 
-### Step-by-Step Walkthrough:
-This challenge is very straight forward, intending to teach you more that cookies exist than anything else.
-
-#### Cookie location
+## Investigation - Cookie location
 First, let's check where cookies are stored. To do that, we need to pull up the developer tools on the website, this can be done by either clicking `F12`, or by right clicking and clicking "inspect"
 
 On the developer tools, The cookies we're looking for are stored in either the 
@@ -49,7 +49,7 @@ In order for a cookie to be stored, we have to interact with the webpage. This c
 
 Hint: If you seee the cookie in a slightly different form, look up the ASCII or Hexadecimal representation of an ```=``` sign
 
-#### Encrypted Cookie
+## Investigation - Encrypted Cookie
 The cookie is encoded in base64, this is given away by the ending ```==``` which is usually a good indicator of this particular algorithm. The symbols are added as padding to ensure the string length is a multiple of 4 characters. Each equal sign represents two bits of zero-padding.
 
 So plug it into your favorite [cryptography tool](https://www.dcode.fr/cipher-identifier), I like the website dcode.fr which has tons of helpful decoders available in many different formats. Once we do, we'll get our flag!

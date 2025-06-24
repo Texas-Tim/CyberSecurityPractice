@@ -9,7 +9,7 @@ Run the Python script and convert the given number from decimal to binary to get
 
 ### Step-by-Step Walkthrough:
 
-#### Learning - What is Binary?
+## Learning - What is Binary?
 Binary is a number system that uses only two digits: 0 and 1. It is the base-2 numeral system, which computers use to represent and process all data. Each digit in binary is called a bit. In binary, numbers are represented by combinations of 0s and 1s, where each position represents a power of 2, moving right to left.
 
 Each position in a binary string is exponential by the power of 2. For example, to represent `2 to the power of 0 = 1` in a binary string of 8 bits we have:

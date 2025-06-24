@@ -10,7 +10,7 @@ What does this `bDNhcm5fdGgzX3IwcDM1` mean? I think it has something to do with 
 ### Step-by-Step Walkthrough:
 We have the encoded message above, but how do we recognize which encryption it's using?
 
-#### Learning - Encryption Investigation
+## Learning - Encryption Investigation
 To figure out which encryption or encoding is being used, you can:
 
 1. Look for clues in the challenge description or file names (e.g., mentions of `Caesar, ROT13, base64` etc.)
@@ -25,7 +25,7 @@ If you’re stuck, try decoding with the most common methods first: `base64, hex
 
 Given the hint in the title, we can start with an assumption that it's `base64` or some variant:
 
-#### Learning - base64
+## Learning - base64
 You can recognize `base64-encoded` data by these features:
 
 * It uses only the characters: `A-Z, a-z, 0-9, +, /` (sometimes `-, _` for URL-safe `base64`), and `=`, which is used for padding.
@@ -33,7 +33,7 @@ You can recognize `base64-encoded` data by these features:
 * It often ends with one or two `=` signs (padding), but not always.
 * The content looks like random letters and numbers, e.g., `U29tZVRleHQ=`, `aGVsbG8=`, etc.
 
-#### Action - Decoding from base64
+## Action - Decoding from base64
 Linux has a simple method for decoding `base64`:
 
 `echo <string> | base64 -d`
